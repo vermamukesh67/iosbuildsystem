@@ -15,7 +15,9 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/vermamukesh67/iosbuildsystem.git"
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   spec.author             = { "verma mukesh" => "vermamukesh67@gmail.com" }
-  spec.source       = { :git => "https://github.com/vermamukesh67/iosbuildsystem.git", :tag => "{spec.version}" }
+  spec.source       = { :git => "https://github.com/vermamukesh67/iosbuildsystem.git", :tag => spec.version }
+  spec.platform     = :ios, '12.0'
+  spec.requires_arc = true
   spec.source_files = "vermasdk/*.{swift}"
   spec.swift_version = "4.2"
   spec.framework = "UIKit"
