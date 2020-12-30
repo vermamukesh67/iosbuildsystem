@@ -1,0 +1,28 @@
+{
+  "name": "vermasdk",
+  "version": "0.0.1",
+  "summary": "A short description of vermasdk.",
+  "description": "This is demo project to learn the ios build pipeline just like jenkins",
+  "homepage": "https://github.com/vermamukesh67/iosbuildsystem.git",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "verma mukesh": "vermamukesh67@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/vermamukesh67/iosbuildsystem.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "vermasdk/*.{swift}",
+  "swift_versions": "4.2",
+  "frameworks": "UIKit",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  },
+  "swift_version": "4.2"
+}
