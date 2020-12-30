@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "vermasdk"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of vermasdk."
   spec.description  = "This is demo project to learn the ios build pipeline just like jenkins"
   spec.homepage     = "https://github.com/vermamukesh67/iosbuildsystem.git"
