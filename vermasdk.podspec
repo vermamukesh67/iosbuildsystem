@@ -21,5 +21,23 @@ Pod::Spec.new do |spec|
   spec.source_files = "vermasdk/*.{swift}"
   spec.swift_version = "5.0"
   spec.framework = "UIKit"
+  # @return [String] the Swift version for the target. If the pod author has provided a set of Swift versions
+#         supported by their pod then the max Swift version across all of target definitions is chosen, unless
+#         a target definition specifies explicit requirements for supported Swift versions. Otherwise the Swift
+#         version is derived by the target definitions that integrate this pod as long as they are the same.
+#
+def swift_version
+  @swift_version ||= begin
+    if spec_swift_versions.empty?
+      target_definitions.map(&:swift_version).compact.uniq.first
+    else
+      spec_swift_versions.sort.reverse_each.find do |swift_version|
+        target_definitions.all? do |td|
+          td.supports_swift_version?(swift_version)
+        end
+      end.to_s
+    end
+  end
+end
 
 end
