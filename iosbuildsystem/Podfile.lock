@@ -1,0 +1,16 @@
+PODS:
+  - vermasdk (0.0.2)
+
+DEPENDENCIES:
+  - vermasdk
+
+SPEC REPOS:
+  https://github.com/vermamukesh67/iosbuildsystem.git:
+    - vermasdk
+
+SPEC CHECKSUMS:
+  vermasdk: 089bfbec8dadb01dfe1370108dd40080590071f0
+
+PODFILE CHECKSUM: 7d7fa65941b8f95cefd505f80fd0a271f372706a
+
+COCOAPODS: 1.10.0
