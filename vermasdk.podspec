@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "vermasdk"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of vermasdk."
   spec.description  = "This is demo project to learn the ios build pipeline just like jenkins"
   spec.homepage     = "https://github.com/vermamukesh67/iosbuildsystem.git"
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '12.0'
   spec.requires_arc = true
   spec.source_files = "vermasdk/*.{swift}"
-  spec.swift_version = '>= 3.2, <= 4.0'
+  spec.swift_version = "5.0"
   spec.framework = "UIKit"
 
 end
